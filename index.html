@@ -1,5 +1,5 @@
 <style>
-    .image{
+    .image {
         border-radius: 1000px;
         border-width: 5px;
         border-style: solid;
@@ -8,17 +8,20 @@
         height: 160px;
         background-color: black;
     }
-    .imageBox{
+    
+    .imageBox {
         text-align: center;
         display: block;
     }
-    .mysosmed{
+    
+    .mysosmed {
         display: table;
         border-spacing: 16px;
         margin-right: auto;
         margin-left: auto;
     }
-    .emgit{
+    
+    .emgit {
         display: table-cell;
         margin: auto;
         padding: 12px;
@@ -29,7 +32,8 @@
         border-color: black;
         border-width: 2px;
     }
-    .firstSectBox{
+    
+    .firstSectBox {
         background-color: darkslateblue;
         margin: auto;
         padding: 12px;
@@ -41,7 +45,8 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-    .secondSectBox{
+    
+    .secondSectBox {
         background-color: darkslateblue;
         margin: auto;
         padding: 12px;
@@ -54,12 +59,14 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-    .nama{
+    
+    .nama {
         text-align: center;
         font-size: 30px;
         color: azure;
     }
-    .Box{
+    
+    .Box {
         background-color: azure;
         margin-left: 32px;
         margin-right: 32px;
@@ -69,77 +76,84 @@
         border-width: 2px;
         text-align: center;
     }
-    .labelProject{
+    
+    .labelProject {
         margin-top: 60px;
         color: azure;
         font-size: 20px;
         text-align: center;
     }
-    .project{
+    
+    .project {
         background-color: mediumslateblue;
         text-decoration: none;
-        padding: 6px;
+        <!-- padding: 6px;
         padding-left: 12px;
         padding-right: 12px;
         margin: 24px;
-        color: azure;
+        -->color: azure;
         font-size: 32px;
         border-color: darkslateblue;
-        border-width: 2px;
-        border-style: solid;
+        <!-- border-width: 2px;
+        -->border-style: solid;
         border-radius: 20px;
         display: block;
+        margin: auto;
     }
-    .project:hover{
+    
+    .project:hover {
         background-color: darkgoldenrod;
     }
 </style>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>About Me</title>
 </head>
+
 <body>
-    <div class="firstSectBox">
-        <div class="imageBox">
-            <img class="image" src="cyanya.png" alt="cyanya.png">
-            <p class="nama">Ivan Nircahya</p>
+    <div class="container">
+        <div class="firstSectBox">
+            <div class="imageBox">
+                <img class="image" src="cyanya.png" alt="cyanya.png">
+                <p class="nama">Ivan Nircahya</p>
+            </div>
+            <div class="mysosmed row">
+                <p class="emgit col-md-6">
+                    Email<br>
+                    <a href="mailto:ivanxirko1987@gmail.com">ivanxirko1987@gmail.com</a>
+                </p>
+                <p class="emgit col-md-6 ">
+                    Github<br>
+                    <a href="github.com/Vandemonica">github.com/Vandemonica</a>
+                </p>
+            </div>
         </div>
-        <div class="mysosmed">
-            <p class="emgit">
-                Email<br>
-                <a href="mailto:ivanxirko1987@gmail.com">ivanxirko1987@gmail.com</a>
-            </p>
-            <p class="emgit">
-                Github<br>
-                <a href="github.com/Vandemonica">github.com/Vandemonica</a>
-            </p>
-        </div>
-    </div>
-    <div class="secondSectBox">
-        <div class="Box" style="text-align: unset;">
-            <p>Nama            : Ivan Nircahya</p>
-            <p>Umur            : 16 tahun</p>
-            <p>Sekolah         : SMKN 2 Surabaya</p>
-            <p>Alamat          : Tandes Kidul gang 1 no 4, kecamatan Tandes, kota Surabaya</p>
-        </div>
-        <p class="Box">
-            Seorang pelajar dari SMKN 2 Surabaya, saat ini duduk dibangku 
-            kelas 11 jurusan SIJA (Sistem Informatika Jaringan dan Aplikasi). 
-            Saat ini saya sedang menjelajahi dunia pemrogramman dan membuat
-            project-project kecil menggunakan bahasa pemrogramman 
-            PHP, SQL(untuk database), C#, dan Python.
-        </p>
-        <div>
-            <p class="labelProject">--My Little Project--</p>
+        <div class="secondSectBox">
+            <div class="Box" style="text-align: unset;">
+                <p>Nama : Ivan Nircahya</p>
+                <p>Umur : 16 tahun</p>
+                <p>Sekolah : SMKN 2 Surabaya</p>
+                <p>Alamat : Tandes Kidul gang 1 no 4, kecamatan Tandes, kota Surabaya</p>
+            </div>
             <p class="Box">
-                <a href="https://cyanya.000webhostapp.com/" class="project">Union</a>
-                <a href="https://cyanya.000webhostapp.com/cedrie" class="project">Cedrie</a>
+                Seorang pelajar dari SMKN 2 Surabaya, saat ini duduk dibangku kelas 11 jurusan SIJA (Sistem Informatika Jaringan dan Aplikasi). Saat ini saya sedang menjelajahi dunia pemrogramman dan membuat project-project kecil menggunakan bahasa pemrogramman PHP,
+                SQL(untuk database), C#, dan Python.
             </p>
+            <div>
+                <p class="labelProject">--My Little Project--</p>
+                <p class="Box">
+                    <a href="https://cyanya.000webhostapp.com/" class="btn btn-outline btn-block project">Union</a>
+                    <a href="https://cyanya.000webhostapp.com/cedrie" class="btn btn-outline btn-block project">Cedrie</a>
+                </p>
+            </div>
+            <span style="color: azure; margin-left: 10px; font-style: italic;">Sincerely with Hope, Love, Faith, and Luck</span>
         </div>
-        <span style="color: azure; margin-left: 10px; font-style: italic;">Sincerely with Hope, Love, Faith, and Luck</span>
     </div>
 </body>
+
 </html>
